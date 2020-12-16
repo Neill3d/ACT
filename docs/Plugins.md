@@ -1,3 +1,20 @@
+
+Maya Plugins
+============
+
+Live Streaming
+-------------------
+
+  This is a python based plugin to start streaming joints transform and float properties values as a server for live bridge.
+
+  Python module AnimLiveBridge.py and dynamic library _AnimLiveBridge.pyd you should put into a place where Maya could catch it.
+
+  To work with a plugin you should select joint objects.
+  Float properties that you would like to stream should start with "float_"
+  
+  The Plugin registers two commands StartLive() / StopLive()
+
+
 MotionBuilder Plugins
 =====================
 
@@ -12,8 +29,19 @@ Plugins show a way how with help of fbx extensions, we can store/retrieve and ex
 
 [![MayaDrivenKeysGraph](https://github.com/Avalanche-Studios/ACT/blob/master/docs/images/maya_driven_keys_graph.jpg)]()
 
-For more detailed information, please, have a look in a FBExt_DrivenKeys document.
+For more detailed information, please, have a look at a FBExt_DrivenKeys document.
 
+Live Bridge Devices
+-------------------
+
+Server / Client device plugins for Autodesk MotionBuilder.
+Designed to sync models animation between application instances.
+That could help, for example, to animate face on a face rig in one motionbuilder instance
+and have a live preview in a main scene with body animation in another motionbuilder instance
+
+[![LiveBridgePreview](https://github.com/Avalanche-Studios/ACT/blob/master/docs/images/LiveBridge.gif)]()
+
+For more detailed information, please, have a look at a LiveBridgeDevices document.
 
 Marker Wire
 -------------------
